@@ -114,7 +114,16 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-      
+    
+    - name: rm socat
+      run: cd openwrt && rm -rf  /feeds/luci/applications/luci-app-socat
+    - name: download socat
+      run: |
+        mkdir socat
+        cd socat
+        git clone https://github.com/chenmozhijin/luci-app-socat.git
+        cp -r -v /luci-app-socat/luci-app-socat /openwrt/feeds/luci/applications/luci-app-socat
+        
     - name: Load custom configuration    
       run: |
         [ -e files ] && mv files openwrt/files

@@ -122,7 +122,8 @@ jobs:
         mkdir socat
         cd socat
         git clone https://github.com/chenmozhijin/luci-app-socat.git
-        cp -r -v /socat/luci-app-socat/luci-app-socat /openwrt/feeds/luci/applications/luci-app-socat
+        rm -rf ./luci-app-socat/LICENSE && rm -rf ./luci-app-socat/README.md
+        cp -r -v ./luci-app-socat /openwrt/feeds/luci/applications/luci-app-socat
         
     - name: Load custom configuration    
       run: |

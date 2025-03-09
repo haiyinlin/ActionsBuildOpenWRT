@@ -128,7 +128,7 @@ jobs:
         git clone https://github.com/chenmozhijin/luci-app-socat.git
         rm -rf luci-app-socat/LICENSE luci-app-socat/README.md
         cd ..
-        cp -r -v socat/luci-app-socat openwrt/feeds/luci/applications/luci-app-socat
+        cp -r -v socat/luci-app-socat/luci-app-socat openwrt/feeds/luci/applications/luci-app-socat
         
     - name: Load custom configuration    
       run: |

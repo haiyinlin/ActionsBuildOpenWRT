@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sed -i 's/llvm.download-ci-llvm=true/llvm.download-ci-llvm=false/g' /feeds/packages/lang/rust/Makefile
 
 
 # Modify default IP

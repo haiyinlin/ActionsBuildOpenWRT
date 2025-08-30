@@ -1,5 +1,4 @@
 #!/bin/bash
-sed -i 's/llvm.download-ci-llvm=true/llvm.download-ci-llvm=false/g' /feeds/packages/lang/rust/Makefile
 # 1. 删除源码自带的旧版 mosdns 和 v2ray-geodata
 #    脚本的当前目录已经是 openwrt/，所以可以直接操作
 echo 'Removing old mosdns and v2ray-geodata...'

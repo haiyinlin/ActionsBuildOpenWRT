@@ -11,6 +11,10 @@ echo 'Cloning new mosdns and v2ray-geodata...'
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
+
+# 加入万吉
+git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
+
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 

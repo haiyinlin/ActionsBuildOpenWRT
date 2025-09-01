@@ -9,9 +9,9 @@
 #sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' ./feeds.conf.default
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' ./feeds.conf.default
 #sed -i '$a src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' ./feeds.conf.default
-sed -i '$a src-git netspeedtest https://github.com/sirpdboy/netspeedtest.git' ./feeds.conf.default
+# sed -i '$a src-git netspeedtest https://github.com/sirpdboy/netspeedtest.git' ./feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' ./feeds.conf.default
-sed -i '$a src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' ./feeds.conf.default
+# sed -i '$a src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' ./feeds.conf.default
 
 # homeproxy
 #git clone --depth=1 https://github.com/immortalwrt/homeproxy.git package/homeproxy

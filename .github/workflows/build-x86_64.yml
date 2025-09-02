@@ -109,14 +109,6 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
       
-    - name: Node package
-      run: |
-        rm -rf openwrt/feeds/packages/lang/node*
-        cd openwrt/feeds/packages/lang 
-        git clone https://github.com/nxhack/openwrt-node-packages.git node
-        cd && cd openwrt
-        ./scripts/feeds update node && ./scripts/feeds install -a -p node
-
     - name: Load custom configuration    
       run: |
         [ -e files ] && mv files openwrt/files

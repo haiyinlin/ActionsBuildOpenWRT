@@ -126,13 +126,6 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
         
-    - name: Node package
-      run: |
-        rm -rf openwrt/feeds/packages/lang/node*
-        git clone https://github.com/nxhack/openwrt-node-packages.git openwrt/feeds/packages/lang/node
-        cd openwrt
-        ./scripts/feeds update node
-        ./scripts/feeds install -a -p node
         
     - name: Compile the firmware
       id: compile
